@@ -10928,4 +10928,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.bg-grey-200 {
+  background-color: #e9ecef;
 }/*# sourceMappingURL=custom.css.map */

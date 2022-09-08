@@ -12,22 +12,43 @@
 </head>
 
 <body>
-    <div class="container my-3">
-        <div class="row">
-            <div class="col-6">
-                <div class="card">
-                    <img src="resources/test-image.jpeg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">Name: Rick Sanchez</h3>
-                        <p class="card-text my-1">Specie: Human</p>
-                        <p class="card-text my-1">Status: Alive</p>
-                        <p class="card-text my-1">Location: Citadel of Ricks</p>
-                        <p class="card-text my-1">Origin: Earth (C-137)</p>
+    <div class="container my-3 px-5">
+        <h1 class="display-4 text-center">Rick and Morty characters</h1>
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 text-center">
+                    <div class="d-flex">
+                            <input id="findCharacter" type="text" class="form-control w-75" placeholder="Write the name of a character...">
+                            <button id="btnSearch" class="btn btn-outline-info mx-3" type="submit">Buscar</button>
                     </div>
-                  </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-3">
+                    <div class="card" id="cardCharacter">
+                        <!-- <img id="photo" src="resources/test-image.jpeg" class="card-img-top img-fluid" alt="Character photo">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold" id="name">Name: Rick Sanchez</h3>
+                            <p class="card-text my-1" id="specie">Specie: Human</p>
+                            <p class="card-text my-1" id="status">Status: Alive</p>
+                            <p class="card-text my-1" id="location">Location: Citadel of Ricks</p>
+                            <p class="card-text my-1" id="origin">Origin: Earth (C-137)</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Show character template -->
+    <template id="templateCharacter">
+        <div class="card" id="cardCharacter">
+            <img id="photo" src="resources/test-image.jpeg" class="card-img-top img-fluid" alt="Character photo">
+            <div class="card-body">
+                <h3 class="card-title fw-bold" id="name">Name: Rick Sanchez</h3>
+                <p class="card-text my-1" id="specie">Specie: Human</p>
+                <p class="card-text my-1" id="status">Status: Alive</p>
+                <p class="card-text my-1" id="location">Location: Citadel of Ricks</p>
+                <p class="card-text my-1" id="origin">Origin: Earth (C-137)</p>
             </div>
         </div>
     </div>
+    </template>
     <!-- Script Js app -->
     <script src="js/app.js"></script>
     <!-- Script Bootstrap Js -->
