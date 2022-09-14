@@ -4,12 +4,15 @@
 const cardCharacter = document.getElementById("cardCharacter");
 const templateCharacter = document.getElementById("templateCharacter");
 const findCharacter = document.getElementById("findCharacter");
+const formSearch = document.getElementById("formSearch");
 
 const urlCharters = "https://rickandmortyapi.com/api/character/";
 
 const fragment = document.createDocumentFragment();
 
-document.querySelector("#btnSearch").addEventListener("click", () => {
+formSearch.addEventListener("submit", (e) => {
+
+    e.preventDefault();
 
     const idChacarter = findCharacter.value;
     searchCharacter(idChacarter);
